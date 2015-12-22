@@ -1,0 +1,19 @@
+# Site settings
+title: Louis Absil
+email: louis.absil@gmail.com
+description: "Coucou c'est moi."
+baseurl: ""
+url: "http://louis.absil.fr"
+paginate: 10
+paginate_path: "/page:num/"
+
+collections:
+ files:
+   output: true
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+sass:
+    style: compressed

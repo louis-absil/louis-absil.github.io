@@ -1,0 +1,70 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     2em;
+
+$grey-color:       #828282;
+$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-light: lighten($grey-color, 50%);
+
+$text-color:       $grey-color-dark;
+$background-color: $grey-color-dark;
+//$background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAMrAAAAJDRlYjA3NGQ1LWJmMGMtNDdlYS05ODVkLWMyYjIzODQ0ZTdhMw.jpg);
+$brand-color:      #2a7ae2;
+
+$background-color-pagecontent: rgba(237, 237, 251, 0.95);
+
+$background-color-listgroup: $grey-color-dark;
+$color-listgroup: $grey-color-light;
+
+$orange-color-rss: #FF7C00;
+$orange-color-note: #FFFD8A;
+$red-color-jekyll: #AA0000;
+
+// Width of the content area
+$content-width:    800px;
+
+$on-xs:            35.5em;
+$on-sm:            48em;
+$on-md:            64em;
+$on-lg:            80em;
+
+$on-palm:          $on-xs;
+$on-laptop:        $on-md;
+
+// for the church pictures
+$church-max-height: 10cm;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "bootstrap",
+        "base",
+        "layout"
+;

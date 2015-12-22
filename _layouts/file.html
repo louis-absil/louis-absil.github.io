@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  {% include head.html %}
+
+<body>
+<div class="container">
+    {% include header.html %}
+
+    <div class="page-content">
+    <h2>{{ page.title }}</h2>
+      <div class="wrap">
+      {{ content }}
+      </div>
+
+    {% if page.description %}<p><em>{{ page.description }}</em></p>{% endif %}
+    
+    </div>
+</div>
+
+{% include footer.html %}
+
+</body>
+</html>
