@@ -11,7 +11,7 @@ permalink: /files/
 <ul class="timeline">
 {% for file in site.files %}
     <li class="timeline-inverted">
-      <div class="timeline-badge danger"><i class="glyphicon glyphicon-music"></i></div>
+      <div class="timeline-badge danger"><i class="fa fa-music"></i></div>
       <div class="timeline-panel">
        <div class="timeline-heading">
        <a href="{{ file.url | prepend: site.baseurl }}"><h4 class="timeline-title">{{ file.title }}</h4></a>
